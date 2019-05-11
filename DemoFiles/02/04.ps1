@@ -2,8 +2,8 @@
     Now let's hookup DSCPullServerAdmin for DB interaction to see an example of registration being handled.
 
     how to figure out what the protocol is?
-    Read DSCDPM
-    IlSpy (peek into Pull Server DLL)
+    Read DSCPM
+    IlSpy (peek into DLLs)
     Fiddler to capture http requests and responses
     Look at Traek
     A lot of trial and error (observe LCM behavior)

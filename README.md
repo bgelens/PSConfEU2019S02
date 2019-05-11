@@ -20,3 +20,5 @@ On wspull (`psconfeu-0<revisionNumber>-pull.westeurope.cloudapp.azure.com`):
 * Open VS Code and install PowerShell extension (leave at ISE color as bright theme is requested by PSConf).
 * Switch to PSv6 for Integrated terminal
 * Reload VS Code and use workspace folder: `C:\Users\Public\Desktop\PSConfEU2019S02-master\`.
+* Run `00.ps1` from DemoFiles/01.
+
