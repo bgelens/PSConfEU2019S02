@@ -1,0 +1,2 @@
+# start demo env
+Start-Process -FilePath 'c:\ubuntu\ubuntu.exe' -ArgumentList "run pwsh -NoProfile -NoLogo -NoExit -File '/mnt/c/Users/Public/Desktop/PSConfEU2019S02-master/DemoFiles/StartDemoEnv.ps1'"
