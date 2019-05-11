@@ -72,10 +72,11 @@ Invoke-WebRequest -UseBasicParsing -Uri https://github.com/PowerShell/PowerShell
 Start-Process -Wait -ArgumentList "/package $env:TEMP\PowerShell-6.2.0-win-x64.msi /quiet ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ENABLE_PSREMOTING=1 REGISTER_MANIFEST=1" -FilePath msiexec.exe
 
 # install dscpullserveradmin and polaris on pwsh
-& 'C:\Program Files\PowerShell\6\pwsh.exe' -NoProfile -Command Install-module DSCPullServerAdmin, Polaris -Scope AllUsers -Force
+& 'C:\Program Files\PowerShell\6\pwsh.exe' -NoProfile -Command Install-module -Name DSCPullServerAdmin -Scope AllUsers -Force
+& 'C:\Program Files\PowerShell\6\pwsh.exe' -NoProfile -Command Install-module -Name Polaris -Scope AllUsers -Force
 
 # install pullaris on pwsh
-Copy-Item -Path C:\Pullaris-master\Pullaris -Recurse -Destination 'C:\Program Files\PowerShell\Modules'
+Copy-Item -Path C:\Pullaris-master\Pullaris -Recurse -Destination 'C:\Program Files\PowerShell\Modules' -Container
 
 # install vs code
 Invoke-WebRequest -UseBasicParsing -Uri https://go.microsoft.com/fwlink/?Linkid=852157 -OutFile $env:TEMP\vscodesetup.exe

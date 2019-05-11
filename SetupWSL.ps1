@@ -4,5 +4,6 @@
 & c:\ubuntu\ubuntu.exe run apt-get update
 & c:\ubuntu\ubuntu.exe run add-apt-repository universe
 & c:\ubuntu\ubuntu.exe run apt-get install -y powershell
-& c:\ubuntu\ubuntu.exe run pwsh -NoProfile -Command Install-Module DSCPullServerAdmin, Polaris -Force
+& c:\ubuntu\ubuntu.exe run pwsh -NoProfile -Command Install-Module DSCPullServerAdmin -Force
+& c:\ubuntu\ubuntu.exe run pwsh -NoProfile -Command Install-Module Polaris -Force
 & c:\ubuntu\ubuntu.exe run pwsh -NoProfile -Command Copy-Item -Path /mnt/c/Pullaris-master/Pullaris/ -Recurse -Destination /opt/microsoft/powershell/6/Modules
